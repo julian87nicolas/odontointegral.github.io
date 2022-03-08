@@ -27,7 +27,6 @@ nav{
     width: 100%;
     align-items: center;
     background-color: var(--light);
-    padding: 1rem 2rem 1rem 2rem;
 }
 nav a{
     display: flex;
@@ -43,24 +42,47 @@ nav h2{
     font-size: 3rem;
     flex-basis: 100%;
     margin: 0;
-    align-items: center;
     text-transform: uppercase;
-    font-weight: bolder;
-    font-stretch: expanded;
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+nav img{
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1rem;
 }
 
 nav ul{
     display: flex;
     flex-basis: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 nav ul li{
-    gap: 1rem;
+    /*gap: 1rem;*/
     list-style: none;
     font-weight: bold;
 }
+/* Botonera prototipo
+nav ul li:first-child{
+    padding: 1rem 2rem 1rem 2rem;
+    border: 1px red solid;
+    border-top-left-radius: 5rem;
+    border-bottom-left-radius: 5rem;
+}
+nav ul li:nth-child(1n){
+    padding: 1rem 2rem 1rem 2rem;
+    border: 1px red solid;
+}
+nav ul li:last-child{
+    padding: 1rem 2rem 1rem 2rem;
+    border: 1px red solid;
+    border-top-right-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+}
+*/
+
 
 nav i{
     font-size: 1.8rem;
@@ -92,7 +114,10 @@ nav i{
     nav ul{
         padding: 0;
         width: 100%;
-        justify-content: space-around;
+        /*justify-content: space-around;*/
+    }
+    nav h2{
+        padding: 1rem 0 1rem 0;
     }
 }
 
