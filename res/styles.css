@@ -1,11 +1,14 @@
 
 :root{
-    --dark: #9A92E0;
-    --mddark: #D0A0FA;
+    --dark: #364182;
+    --mddark: #e07dd1;
     --medium: #EDAAF0;
-    --lightblue: #AADDF0;
-    --blue: #9DBBFA;
-    --sans: 'Oxygen', sans-serif;
+    --light: #fac2c2;
+    --red: #ff5757;
+    --orange: #ff5789;
+    /*--sans: 'Oxygen', sans-serif;*/
+
+    --sans: 'League Spartan', sans-serif;
     --mono: 'Oxygen Mono', monospace;
 }
 
@@ -23,7 +26,7 @@ nav{
     /*position: fixed;*/
     width: 100%;
     align-items: center;
-    background-color: white;
+    background-color: var(--light);
     padding: 1rem 2rem 1rem 2rem;
 }
 nav a{
@@ -41,6 +44,9 @@ nav h2{
     flex-basis: 100%;
     margin: 0;
     align-items: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-stretch: expanded;
 }
 
 nav ul{
@@ -64,18 +70,21 @@ nav i{
 
 .content{
     height: 300px;
-    background-color: var(--dark);
+    background-color: var(--light);
 }
 .content2{
     height: 300px;
-    background-color: var(--medium);
+    background-color: var(--light);
 }
 .content3{
     height: 300px;
-    background-color: var(--blue);
+    background-color: var(--light);
 }
 
 @media (max-width: 800px){
+    *{
+        width: 100%;
+    }
     nav{
         flex-direction: column;
     }
@@ -87,4 +96,11 @@ nav i{
         width: 100%;
         justify-content: space-around;
     }
+}
+
+.sep{
+    background: rgb(255,87,87);
+    background: linear-gradient(90deg, rgba(255,87,87,1) 20%, rgba(54,65,130,1) 50%);/*
+    background-color: var(--dark);*/
+    height: 2px;
 }
