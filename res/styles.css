@@ -82,14 +82,12 @@ nav i{
 }
 
 @media (max-width: 800px){
-    *{
+    body{
         width: 100%;
     }
     nav{
         flex-direction: column;
-    }
-    nav h2{
-        flex-basis: 100%;
+        padding: 2rem 0 2rem 0;
     }
     nav ul{
         padding: 0;
