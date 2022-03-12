@@ -191,6 +191,32 @@ nav i{
     padding: 0;
 }
 
+.resume-download{
+    display: flex;
+    justify-content: center;
+}
+
+.resume-download a{
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--red);
+    padding: 1rem;
+    margin: 0 0 2rem 0;
+    color: var(--light);
+    
+    text-decoration: none;
+    font-family: var(--sans);
+    font-size: 1rem;
+}
+.resume-download a:hover{
+    background-color: var(--mddark);
+}
+
+.resume-download a:active{
+    background-color: var(--dark);
+}
+
+
 @media (max-width: 800px){
     body{
         width: 100%;
