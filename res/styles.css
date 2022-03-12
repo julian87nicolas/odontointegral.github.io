@@ -3,7 +3,9 @@
     --dark: #364182;
     --mddark: #e07dd1;
     --medium: #EDAAF0;
-    --light: #fac2c2;
+    --light: white;
+    /*--light: #fcd6d6;*/
+    /*--light: #fac2c2;*/
     --red: #ff5757;
     --orange: #ff5789;
     /*--sans: 'Oxygen', sans-serif;*/
@@ -220,16 +222,16 @@ nav i{
     background: rgb(255,87,87);
     background: linear-gradient(90deg, rgba(255,87,87,1) 20%, rgba(54,65,130,1) 50%);/*
     background-color: var(--dark);*/
-    background: rgb(250,194,194);
-    background: linear-gradient(90deg, rgba(250,194,194,1) 33%, rgba(54,65,130,1) 66%);
+    background: var(--light);
+    background: linear-gradient(90deg, var(--light) 33%, rgba(54,65,130,1) 66%);
     height: 2px;
     margin: 0;
     padding: 0;
 }
 
 .sep.rev{
-    background: rgb(250,194,194);
-    background: linear-gradient(90deg, rgba(54,65,130,1) 33%, rgba(250,194,194,1) 66%);
+    background: var(--light);
+    background: linear-gradient(90deg, rgba(54,65,130,1) 33%, var(--light) 66%);
     height: 2px;
     margin: 0;
     padding: 0;
