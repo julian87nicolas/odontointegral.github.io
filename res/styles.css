@@ -28,6 +28,7 @@ nav{
     display: flex;
     flex-direction: column;
     position: fixed;
+    top: 0;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -126,6 +127,27 @@ nav ul li:last-child{
 nav i{
     font-size: 1.8rem;
 }
+/*-------------------------Intro -------------------------*/
+
+.intro{
+    font-size: 2rem;
+    font-family: var(--sans);
+    color: var(--light);
+    margin-top: 6rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+
+    background-image: url("./images/tools.jpg");
+    background-size: cover;
+}
+.intro p{
+    text-align: center;
+    flex-basis: 50%;
+    line-height: 150%;
+    text-shadow: 0 0 1rem var(--dark);
+}
+
 
 /*-------------------------Main content-------------------------*/
 
@@ -270,8 +292,6 @@ nav i{
     .content img{
         width: 40%;
         padding: 1rem;
-        border-bottom: none;
-        border-right: none;
         border-bottom-right-radius: none;
     }
     .content.first{
@@ -291,6 +311,13 @@ nav i{
         border-bottom: var(--dark) 2px solid;
         border-right: var(--dark) 2px solid;
     }
+
+    .intro{
+        margin-top: 8rem;
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
 }
 
 @media (max-width: 280px){
@@ -346,7 +373,7 @@ nav i{
     position: fixed;
     height: 2px;
     width: 100%;
-    margin-top: 5.75rem;
+    top: 5.75rem;
     padding: 0;
 }
 
