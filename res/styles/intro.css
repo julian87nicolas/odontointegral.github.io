@@ -1,0 +1,44 @@
+:root{
+    --dark: #364182;
+    --mddark: #e07dd1;
+    --medium: #EDAAF0;
+    --light: white;
+    /*--light: #fcd6d6;*/
+    /*--light: #fac2c2;*/
+    --red: #ff5757;
+    --orange: #ff5789;
+    /*--sans: 'Oxygen', sans-serif;*/
+
+    --sans: 'League Spartan', sans-serif;
+    --mono: 'Oxygen Mono', monospace;
+}
+
+/*-------------------------Intro -------------------------*/
+
+.intro{
+    font-size: 2rem;
+    font-family: var(--sans);
+    color: var(--light);
+    /*margin-top: 6rem;*/
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+
+    background-image: url("../images/tools.jpg");
+    background-size: cover;
+}
+.intro p{
+    text-align: center;
+    flex-basis: 50%;
+    line-height: 150%;
+    text-shadow: 0 0 1rem var(--dark);
+}
+
+
+@media (max-width: 800px){
+    .intro{
+        /*margin-top: 8rem;*/
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+}
