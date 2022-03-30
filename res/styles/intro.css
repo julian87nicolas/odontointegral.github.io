@@ -34,6 +34,12 @@
     text-shadow: 0 0 1rem var(--dark);
 }
 
+.os-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .obra-social{
     display: flex;
     flex-direction: column;
@@ -67,6 +73,15 @@
 
     list-style-type: none;
     justify-content: center;
+}
+
+input#search{
+    height: fit-content;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    justify-content: center;
+    border: none;
 }
 
 /* width */

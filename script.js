@@ -35,7 +35,12 @@ OSlistButton.addEventListener('click', (e) => {
         if(OSlistHTML.innerHTML == ""){
             OSlistHTML.innerHTML = OSlist;
             OSlistHTML.style.overflowY = "scroll";
-            OSlistHTML.style.height = "300px";
+            if(window.innerWidth > 800){
+                OSlistHTML.style.height = "20rem";
+            }
+            else{
+                OSlistHTML.style.height = "10rem";
+            }            
 
             console.log(OSlistButton.offsetWidth);
 
@@ -53,20 +58,23 @@ OSlistButton.addEventListener('click', (e) => {
 const search = document.querySelector('#search');
 
 search.addEventListener("keyup", (e) => {
-    
-        let results = "<ul>";
-        for(let i=0;i<OS.length;i++){
-            if(OS[i].toLowerCase().includes(search.value.toLowerCase())){
-                results += `<li>${OS[i]}</li>`;
-            }
+    let results = "<ul>";
+    for(let i=0;i<OS.length;i++){
+        if(OS[i].toLowerCase().includes(search.value.toLowerCase())){
+            results += `<li>${OS[i]}</li>`;
         }
-        results += "</ul>";
-        OSlistHTML.innerHTML = results;
-        OSlistHTML.style.overflowY = "scroll";
-        OSlistHTML.style.height = "300px";
+    }
+    results += "</ul>";
+    OSlistHTML.innerHTML = results;
+    OSlistHTML.style.overflowY = "scroll";
+    if(window.innerWidth > 800){
+        OSlistHTML.style.height = "20rem";
+    }
+    else{
+        OSlistHTML.style.height = "10rem";
+    } 
 
-        console.log(OSlistButton.offsetWidth);
+    console.log(OSlistButton.offsetWidth);
 
-        OSlistButton.style.borderRadius = "2.5rem";
-    
+    OSlistButton.style.borderRadius = "2.5rem";
 } );
