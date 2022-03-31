@@ -24,7 +24,7 @@ nav{
     padding: 0;
     width: 100%;
     align-items: flex-start;
-    /* background-color: var(--light); */
+    background-color: transparent;
 }
 
 .nav-row{

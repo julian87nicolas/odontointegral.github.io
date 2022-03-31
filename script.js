@@ -3,7 +3,7 @@ const firstSep = document.querySelector('.sep.fixed');
 
 // event scroll down
 window.addEventListener('scroll', () => {
-    if(window.pageYOffset > 100){
+    if(window.pageYOffset > 0){
         nav.style.backgroundColor = 'white';
         nav.style.position = 'fixed';
         nav.style.top = '0';
