@@ -21,6 +21,7 @@
     color: var(--light);
     /*margin-top: 6rem;*/
     padding: 2rem;
+    padding-top: 6rem;
     display: flex;
     justify-content: space-evenly;
     margin: 0;
@@ -111,6 +112,7 @@ input#search{
         /*margin-top: 8rem;*/
         font-size: 1.5rem;
         padding: 1rem;
+        padding-top: 10rem;
         flex-direction: column;
     }
     ::-webkit-scrollbar-thumb {

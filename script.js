@@ -4,18 +4,20 @@ const firstSep = document.querySelector('.sep.fixed');
 // event scroll down
 window.addEventListener('scroll', () => {
     if(window.pageYOffset > 100){
+        nav.style.backgroundColor = 'white';
         nav.style.position = 'fixed';
         nav.style.top = '0';
         // if size windows < 768px
-        if(window.innerWidth > 800){
+        if(window.innerWidth > 768){
             firstSep.style.display = 'flex';
         }
     }
     else{
-        nav.style.position = 'relative';
+        //nav.style.position = 'relative';
+        nav.style.backgroundColor = 'transparent';
         firstSep.style.display = 'none';
     }
-    console.log(window.pageYOffset);
+    // console.log(window.pageYOffset);
 });
 
 const OS = ["Avalian", "America Servicios", "Caja forense", "CIMESA", "Conferencia episcopal argentina", "DASUTEN", "DAMSU", "Docthos", "Federada Salud", "Galeno", "Gerdanna Salud", "HOPE", "Jerarquicos Salud", "Luis Pasteur", "Medicus", "OPDEA", "OSDIPP", "OSJERA", "OSPIL", "OSPJN", "OSSACRA", "OSTV", "OSAPM", "OSSEG", "Policia Federal", "Prevencion Salud", "Swiss Medical", "Sancor Salud", "SCIS", "SADAIC", "Unimed"];

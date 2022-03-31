@@ -24,7 +24,7 @@ nav{
     padding: 0;
     width: 100%;
     align-items: flex-start;
-    background-color: var(--light);
+    /* background-color: var(--light); */
 }
 
 .nav-row{
@@ -40,6 +40,8 @@ nav a{
     text-decoration: none;
     padding: 1rem;
     margin: 0;
+    
+    text-shadow: 0 0 1rem var(--light);
 }
 nav a:hover{
     color: var(--mddark);
@@ -47,6 +49,7 @@ nav a:hover{
 
 nav ul li a{
     padding: 2rem;
+    border-radius: 0.5rem;
 }
 
 nav ul li a:hover{
@@ -106,7 +109,7 @@ nav i{
         padding: 2rem 0 1rem 0;
         justify-items: center;
         width: 100%;
-        border-bottom: var(--dark) 3px solid;
+        /* border-bottom: var(--dark) 3px solid; */
     }
     .nav-row{
         display: flex;
