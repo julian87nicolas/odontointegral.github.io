@@ -41,6 +41,7 @@ body{
 
 .sep.fixed{
     position: fixed;
+    z-index: 2;
     display: none;
     height: 2px;
     width: 100%;

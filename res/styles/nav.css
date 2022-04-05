@@ -19,13 +19,14 @@ nav{
     display: flex;
     flex-direction: column;
     position: fixed;
-    z-index: 3;
+    z-index: 2;
     top: 0;
     margin: 0;
     padding: 0;
     width: 100%;
     align-items: flex-start;
     background-color: transparent;
+    transition: background-color 0.5s;
 }
 
 .nav-row{
@@ -51,6 +52,7 @@ nav a:hover{
 nav ul li a{
     padding: 2rem;
     border-radius: 0.5rem;
+    transition: background-color 0.5s;
 }
 
 nav ul li a:hover{

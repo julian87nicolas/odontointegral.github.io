@@ -3,6 +3,7 @@
     --mddark: #e07dd1;
     --medium: #EDAAF0;
     --light: white;
+    --light-hover: rgb(219, 219, 219);
     /*--light: #fcd6d6;*/
     /*--light: #fac2c2;*/
     --red: #ff5757;
@@ -13,8 +14,8 @@
     --mono: 'Oxygen Mono', monospace;
 }
 
-/*-------------------------Intro -------------------------*/
 
+/*-------------------------Intro -------------------------*/
 
 .intro{
     font-size: 2rem;
@@ -58,10 +59,12 @@
     height: fit-content;
     width: 18rem;
     cursor: pointer;
+
+    transition: background-color 0.5s;
 }
 
 .list-button:hover{
-    background-color:rgb(219, 219, 219);
+    background-color: var(--light-hover);
 }
 
 .lista{
@@ -74,6 +77,7 @@
     top: 14rem;
     background-color: var(--light);
     z-index: 1;
+    transition: height 0.5s;
 }
 
 .lista ul{

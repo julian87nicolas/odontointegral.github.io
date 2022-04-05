@@ -37,7 +37,7 @@ OSlistButton.addEventListener('click', (e) => {
         if(OSlistHTML.innerHTML == ""){
             OSlistHTML.innerHTML = OSlist;
             OSlistHTML.style.overflowY = "scroll";
-            OSlistHTML.style.border = "2px var(--red) solid";
+            OSlistHTML.style.border = "2px var(--light-hover) solid";
             if(window.innerWidth > 800){
                 OSlistHTML.style.height = "20rem";
             }
@@ -93,7 +93,7 @@ buttonTreatments.addEventListener('click', (e) => {
         listTreatments.innerHTML = treatHTML;
         listTreatments.style.overflowY = "scroll";
         listTreatments.style.display = "relative";
-        listTreatments.style.border = "2px var(--red) solid";
+        listTreatments.style.border = "2px var(--light-hover) solid";
         if(window.innerWidth > 800){
             listTreatments.style.height = "15rem";
         }
