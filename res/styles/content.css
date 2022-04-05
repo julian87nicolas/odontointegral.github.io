@@ -34,23 +34,15 @@
 
 }
 .content article {
-    font-family: var(--mono);
-    font-size: 1rem;
+    font-family: var(--sans);
+    font-size: 1.2rem;
     line-height: 1.5rem;
     width: 60%;
-    
-    /*background-color: var(--red);
-    color: var(--light);*/
 
     border-radius: 1rem;
     
     padding: 1rem;
 }
-/*
-.content.first{
-    padding-top: 100px;
-}*/
-
 .content.rev{
     flex-direction: row-reverse;
 }

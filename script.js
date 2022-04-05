@@ -20,7 +20,7 @@ window.addEventListener('scroll', () => {
     // console.log(window.pageYOffset);
 });
 
-const OS = ["Avalian", "America Servicios", "Caja forense", "CIMESA", "Conferencia episcopal argentina", "DASUTEN", "DAMSU", "Docthos", "Federada Salud", "Galeno", "Gerdanna Salud", "HOPE", "Jerarquicos Salud", "Luis Pasteur", "Medicus", "OPDEA", "OSDIPP", "OSJERA", "OSPIL", "OSPJN", "OSSACRA", "OSTV", "OSAPM", "OSSEG", "Policia Federal", "Prevencion Salud", "Swiss Medical", "Sancor Salud", "SCIS", "SADAIC", "Unimed"];
+const OS = ["Avalian", "America Servicios", "Caja forense", "Conferencia episcopal argentina", "DASUTEN", "DAMSU", "Docthos", "Federada Salud", "Galeno", "Gerdanna Salud", "HOPE", "Jerarquicos Salud", "Luis Pasteur", "Medicus", "OPDEA", "OSDIPP", "OSJERA", "OSPIL", "OSPJN", "OSSACRA", "OSTV", "OSAPM", "OSSEG", "Policia Federal", "Prevencion Salud", "Swiss Medical", "Sancor Salud", "SCIS", "SADAIC", "Unimed"];
 
 let OSlist = "<ul>";
 
@@ -29,7 +29,7 @@ for(let i=0;i<OS.length;i++){
 }
 OSlist += "</ul>";
 
-const OSlistButton = document.querySelector('.obra-social');
+const OSlistButton = document.querySelector('.list-button');
 
 const OSlistHTML = document.querySelector('.lista');
 
@@ -37,6 +37,7 @@ OSlistButton.addEventListener('click', (e) => {
         if(OSlistHTML.innerHTML == ""){
             OSlistHTML.innerHTML = OSlist;
             OSlistHTML.style.overflowY = "scroll";
+            OSlistHTML.style.border = "2px var(--red) solid";
             if(window.innerWidth > 800){
                 OSlistHTML.style.height = "20rem";
             }
@@ -52,7 +53,7 @@ OSlistButton.addEventListener('click', (e) => {
             OSlistHTML.innerHTML = "";
             OSlistHTML.style.overflow = "hidden";
             OSlistHTML.style.height = "0";
-
+            OSlistHTML.style.border = "none";
             OSlistButton.style.borderRadius = "5rem";
         }
 });
@@ -69,14 +70,45 @@ search.addEventListener("keyup", (e) => {
     results += "</ul>";
     OSlistHTML.innerHTML = results;
     OSlistHTML.style.overflowY = "scroll";
-    if(window.innerWidth > 800){
-        OSlistHTML.style.height = "20rem";
-    }
-    else{
-        OSlistHTML.style.height = "10rem";
-    } 
+    OSlistHTML.style.height  = "fit-content";
 
     console.log(OSlistButton.offsetWidth);
 
     OSlistButton.style.borderRadius = "2.5rem";
 } );
+
+const listTreatments = document.querySelector('.treatments.lista');
+const buttonTreatments = document.querySelector('.treatments.list-button');
+const treatments = ["Extracciones", "Tratamiento de conducto", "Blanqueamiento", "Limpieza dental",
+                    "Urgencias", "Caries", "Placas de relajación", "Protesis", "Implantes", "Perno-coronas"].sort(); 
+
+let treatHTML = "<ul>";
+
+for(let i=0; i<treatments.length; i++){
+    treatHTML += `<li>${treatments[i]}</li>`;
+}
+
+buttonTreatments.addEventListener('click', (e) => {
+    if(listTreatments.innerHTML == ""){
+        listTreatments.innerHTML = treatHTML;
+        listTreatments.style.overflowY = "scroll";
+        listTreatments.style.display = "relative";
+        listTreatments.style.border = "2px var(--red) solid";
+        if(window.innerWidth > 800){
+            listTreatments.style.height = "15rem";
+        }
+        else{
+            listTreatments.style.height = "10rem";
+        }            
+
+        buttonTreatments.style.borderRadius = "2.5rem";
+    }
+    else{
+        listTreatments.innerHTML = "";
+        listTreatments.style.border = "none";
+        listTreatments.style.overflow = "hidden";
+        listTreatments.style.height = "0";
+        listTreatments.style.border = "none";
+        buttonTreatments.style.borderRadius = "5rem";
+    }
+});
