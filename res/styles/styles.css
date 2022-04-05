@@ -53,25 +53,6 @@ body{
     padding-top: 6rem;
 }
 
-/* Botonera prototipo
-nav ul li:first-child{
-    padding: 1rem 2rem 1rem 2rem;
-    border: 1px red solid;
-    border-top-left-radius: 5rem;
-    border-bottom-left-radius: 5rem;
-}
-nav ul li:nth-child(1n){
-    padding: 1rem 2rem 1rem 2rem;
-    border: 1px red solid;
-}
-nav ul li:last-child{
-    padding: 1rem 2rem 1rem 2rem;
-    border: 1px red solid;
-    border-top-right-radius: 5rem;
-    border-bottom-right-radius: 5rem;
-}
-*/
-
 @media (max-width: 800px){
     body{
         width: 100%;

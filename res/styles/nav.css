@@ -3,8 +3,7 @@
     --mddark: #e07dd1;
     --medium: #EDAAF0;
     --light: white;
-    /*--light: #fcd6d6;*/
-    /*--light: #fac2c2;*/
+  
     --red: #ff5757;
     --orange: #ff5789;
     /*--sans: 'Oxygen', sans-serif;*/
@@ -44,6 +43,8 @@ nav a{
     margin: 0;
     
     text-shadow: 0 0 1rem var(--light);
+
+    transition: all 0.5s;
 }
 nav a:hover{
     color: var(--mddark);
@@ -52,7 +53,7 @@ nav a:hover{
 nav ul li a{
     padding: 2rem;
     border-radius: 0.5rem;
-    transition: background-color 0.5s;
+    transition: all 0.5s;
 }
 
 nav ul li a:hover{

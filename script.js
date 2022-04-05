@@ -46,7 +46,6 @@ OSlistButton.addEventListener('click', (e) => {
             }            
 
             console.log(OSlistButton.offsetWidth);
-
             OSlistButton.style.borderRadius = "2.5rem";
         }
         else{
