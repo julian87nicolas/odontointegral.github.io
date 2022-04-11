@@ -111,3 +111,11 @@ buttonTreatments.addEventListener('click', (e) => {
         buttonTreatments.style.borderRadius = "5rem";
     }
 });
+
+
+const initButton = document.querySelector('.init');
+
+initButton.addEventListener("click", (e) =>{
+    // window.pageYOffset = 0;
+    window.scrollTo(0,0);
+})
