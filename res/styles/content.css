@@ -56,6 +56,18 @@
     transition: box-shadow 0.5s;
 }
 
+.maps{
+    text-decoration: none;
+    background-color: var(--red);
+    color: white;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+}
+
+.maps:hover{
+    background-color: var(--orange);
+}
+
 @media (max-width: 800px){
     .content{
         flex-direction: column;
