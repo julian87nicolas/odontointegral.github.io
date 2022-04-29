@@ -20,8 +20,11 @@ window.addEventListener('scroll', () => {
     // console.log(window.pageYOffset);
 });
 
-const OS = ["Avalian", "America Servicios", "Caja forense", "Conferencia episcopal argentina", "DASUTEN", "DAMSU", "Docthos", "Federada Salud", "Galeno", "Gerdanna Salud", "HOPE", "Jerarquicos Salud", "Luis Pasteur", "Medicus", "OPDEA", "OSDIPP", "OSJERA", "OSPIL", "OSPJN", "OSSACRA", "OSTV", "OSAPM", "OSSEG", "Policia Federal", "Prevencion Salud", "Swiss Medical", "Sancor Salud", "SCIS", "SADAIC", "Unimed"];
-
+const OS = (["Avalian", "America Servicios", "Caja forense", "Conferencia episcopal argentina",
+             "DASUTEN", "DAMSU", "Docthos", "Federada Salud", "Galeno", "Gerdanna Salud", "HOPE",
+             "Jerarquicos Salud", "Luis Pasteur", "Medicus", "OPDEA", "OSDIPP", "OSJERA", "OSPIL",
+             "OSPJN", "OSSACRA", "OSTV", "OSAPM", "OSSEG", "Policia Federal", "Prevencion Salud",
+             "Swiss Medical", "Sancor Salud", "SCIS", "SADAIC", "Unimed", "OSEP"]).sort();
 let OSlist = "<ul>";
 
 for(let i=0;i<OS.length;i++){
